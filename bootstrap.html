@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BNB Learning Center</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    
+    /* Make sure navbar has a defined height */
+    .navbar {
+        min-height: 100px; /* Set a minimum height */
+        display: flex;
+        align-items: stretch; /* Make children stretch to full height */
+    }
+/* Show dropdown menu on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Prevents shifting */
+}
+.dropdown-menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+}
+
+    /* Style the brand-wrapper */
+    .brand-wrapper {
+        background-color: #198754; /* Green background */
+        display: flex;
+        align-items: center;
+        height: 100%; /* Ensure it fills the navbar */
+        border-radius: 0;
+        position: relative;
+        left: -500px;
+        opacity: 0;
+        transition: left 0.8s ease-out, opacity 0.8s ease-out;
+    }
+
+    /* When the page loads, animate the logo in */
+    .brand-wrapper.show {
+        left: 0;
+        opacity: 1;
+    }
+
+    /* Style the logo */
+    .brand-wrapper img {
+        height: 80px;
+        border-radius: 50%;
+    }
+
+    /* Ensure text color contrasts well */
+    .brand-wrapper strong {
+        color: white;
+        font-size: 1.2rem;
+    }
+</style>
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-warning navbar-light p-0 m-0">
+        <div class="container d-flex align-items-stretch">
+            <a class="navbar-brand d-flex align-items-center brand-wrapper px-3 py-1" href="index.html">
+                <img src="images/logo.jpg" alt="BNB Logo" class="rounded-circle">
+                <strong class="ms-2 text-white">BNB Learning Center</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- About BNB -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            About BNB
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="history.html">History</a></li>
+                            <li><a class="dropdown-item" href="vision.html">Vision & Mission</a></li>
+                            <li><a class="dropdown-item" href="goals.html">Goals & Objectives</a></li>
+                            <li><a class="dropdown-item" href="leadership.html">Leadership</a></li>
+                            <li><a class="dropdown-item" href="governance.html">Governance</a></li>
+                            
+                        </ul>
+                    </li>
+
+                    <!-- Strategy 2034 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Strategy 2034
+                        </a>
+                        <ul class="dropdown-menu">
+                           
+                            
+                           
+                            <li><a class="dropdown-item" href="4d.html">4D Model</a></li>
+                            <li><a class="dropdown-item" href="opportunities.html">Opportunities</a></li>
+                            <li><a class="dropdown-item" href="pedagogy.html">Pedagogy</a></li>
+                            
+                        </ul>
+                    </li>
+
+                    <!-- Academics & Innovation -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Academics & Innovation
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="milestone.html">Milestones</a></li>
+                            <li><a class="dropdown-item" href="digit.html">Digital Learning</a></li>
+                            <li><a class="dropdown-item" href="teachers.html">Teacher Training</a></li>
+                            <li><a class="dropdown-item" href="reading.html">Reading Culture</a></li>
+                            <li><a class="dropdown-item" href="#">Extracurricular (Clubs & Innovation)</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Community & Support -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Community & Support
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="happy.html">Happy Classroom</a></li>
+                            <li><a class="dropdown-item" href="partnership.html">Partnerships</a></li>
+                            <li><a class="dropdown-item" href="support.html">Student Support</a></li>
+                            <li><a class="dropdown-item" href="finance.html">Financial Sustainability</a></li>
+                        </ul>
+                    </li>
+
+                     <!-- Strategy 2034 -->
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            News & Activities
+                        </a>
+                        <ul class="dropdown-menu">
+                           
+                            <li><a class="dropdown-item" href="#">Vacancies</a></li>
+                            <li><a class="dropdown-item" href=""> Sports</a></li>
+                            <li><a class="dropdown-item" href="">Arts</a></li>
+                            
+                        </ul>
+                    </li>
+
+
+
+
+                    <!-- Contact Us -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                    <!-- Portal Login -->
+                    <li class="nav-item">
+                        <a class="btn btn-light text-warning fw-bold" href="login.html">Portal Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bootstrap JS (for dropdowns and navbar functionality) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript to trigger animation on page load -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector(".brand-wrapper").classList.add("show");
+        });
+    </script>
+
+</body>
+</html>

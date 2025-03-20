@@ -686,10 +686,22 @@ lightbox.addEventListener("click", (e) => {
     
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-    window.onload = function () {
-        document.getElementById("preloader").classList.add("hidden"); // Hide preloader when page is loaded
-    };
+    const preloader = document.getElementById("preloader");
+
+    function hidePreloader() {
+        preloader.classList.add("hidden"); // Hide the preloader
+        setTimeout(() => {
+            preloader.style.display = "none"; // Remove it completely after transition
+        }, 500);
+    }
+
+    if (document.readyState === "complete") {
+        hidePreloader();
+    } else {
+        window.addEventListener("load", hidePreloader);
+    }
 });
+
 
 </script>
 

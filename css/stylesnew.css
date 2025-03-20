@@ -115,7 +115,7 @@
 
 
 
-/* Preloader Styles */
+/* Preloader Styles 
 #preloader {
     position: fixed;
     top: 0;
@@ -128,21 +128,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 9999; /* Ensures it's above everything */
+    z-index: 9999; /* Ensures it's above everything 
     transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 
-/* Simple Loader Animation */
+/* Simple Loader Animation 
 .loader {
     width: 50px;
     height: 50px;
     border: 5px solid white;
-    border-top: 5px solid #fbc531; /* Yellow for visibility */
+    border-top: 5px solid #fbc531; /* Yellow for visibility 
     border-radius: 50%;
     animation: spin 1s linear infinite;
     margin-bottom: 10px;
 }
-
+*/
 /* Spinner Animation */
 @keyframes spin {
     0% { transform: rotate(0deg); }

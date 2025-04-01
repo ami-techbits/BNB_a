@@ -271,6 +271,29 @@ body{
       
 
 
+
+
+ @media screen and (min-width: 760px) {
+        .vertical-bar {
+          position: absolute;
+          top: 40%;
+          width: 250px;
+          height: 100vh; /* Extends far down */
+         
+          z-index: 2;
+        }
+      
+        .left-bar {
+          left: 0;
+          background-color: rgba(255, 196, 0, 0.952); /* Semi-transparent orange */
+        }
+      
+        .right-bar {
+          right: 0;
+          background-color: rgba(30, 255, 0, 0.842); /* Semi-transparent orange */
+        }
+      }
+
     /* Welcome Section */
 .welcome {
     display: flex;

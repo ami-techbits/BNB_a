@@ -311,6 +311,8 @@ body{
 .welcome-image {
     width: 35%;
     height: 100%;
+   z-index: 5;
+   
 }
 
 .welcome-image img {
